@@ -1,0 +1,309 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+@font-face 
+{
+    font-family: montserrat_semibold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face 
+{
+    font-family: montserrat_regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face 
+{
+    font-family: montserrat_medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+body 
+{
+    font-family: montserrat_medium;
+    background: #fafafa;
+}
+
+p {
+    font-family: montserrat_medium;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar
+{
+    /*padding: 15px 10px;*/
+    background: #0d557d;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: calc(100% - 185px);
+    border-left:1px solid #fff;
+     transition: width 0.3s;
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.border
+{
+  border: 1px solid #000;
+}
+.pad
+{
+  padding:10px;
+}
+.user_icon
+{
+  padding: 10px;
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar
+{
+    width: 185px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #0d557d;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active 
+{
+    margin-left: -185px;
+}
+
+#sidebar .sidebar-header
+{
+    padding: 20px;
+    background: #0d557d;
+}
+
+/*#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}*/
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar  ul.components  > li
+{
+  margin:15px 0;
+}
+#sidebar ul li a 
+{
+    padding: 7px 0;
+    font-size:13px;
+    display: block;
+    text-align: center;
+    font-family: montserrat_regular;
+    
+}
+#sidebar ul ul a 
+{
+  border-bottom:1px solid #fff;
+}
+#sidebar ul li a:hover 
+{
+    color: #fff;
+    background: #f0d451;
+}
+#sidebar a[aria-expanded="false"]::before,#sidebar a[aria-expanded="true"]::before
+{
+  display:none;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] 
+{
+    color: #fff;
+    background: #0d557d;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before 
+{
+    content: '\e260';
+}
+
+
+
+.powered
+{
+  display: block;
+  text-align: left;
+  position: fixed;
+  bottom: 5px;
+  left:25px;
+}
+/* ---------------------------------------------------
+    header STYLE
+----------------------------------------------------- */
+
+.header-right
+{
+float: right;
+
+color: #000;
+
+margin-right: 10%;
+
+text-align: right;
+
+border-right: 1px solid #fff;
+
+padding: 10px 10px 5px 0;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content 
+{
+    width: calc(100% - 185px);
+    min-height: 100vh;
+    height:100%;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content-holder
+{
+  height:calc(100% - 125px);
+  /*border: 1px solid #000;*/
+  margin: 85px 0 40px 0;
+}
+#content.active 
+{
+    width: 100%;
+}
+.user-space
+{
+
+}
+.user-space #dropdownMenuLink
+{
+
+}
+.user-space .dropdown-menu
+{
+    right: 0;
+    left: unset;
+    margin: 0;
+    padding: 0;   
+}
+.user-space .dropdown-item
+{ 
+    background: #0d557d;    
+    display: block;
+    text-align: right;
+    padding: 5px 15px;
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+.user-space .dropdown-item:hover
+{ 
+  background: #f0d451;
+}
+
+.user-space a[aria-expanded="false"]::before,.user-space a[aria-expanded="true"]::before
+{
+  display:none;
+  
+}
+.user-space a[aria-expanded="true"]
+{
+  background:none !important;
+}
+/* ---------------------------------------------------
+    footr STYLE
+----------------------------------------------------- */
+footer
+{
+  position:fixed;
+  bottom:0;
+  width:calc(100% - 185px);
+  padding:10px;
+  border-left:1px solid #fff; 
+  background: #0d557d;
+  transition: width 0.3s;
+}
+footer p
+{
+  text-align: right;
+  margin: 0;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (min-width: 992px) 
+{
+  #sidebarCollapse
+  {
+    display:none;
+  }
+  
+}
+@media (max-width: 768px) 
+{
+   
+    #sidebarCollapse span 
+    {
+        display: none;
+    }
+}
+
+/*Inner content*/
+.rowbg
+{
+  background-color: #efefee;
+  
+}
+.rowbg p
+{
+  font-size: 16px;
+  color: #0d557d;
+  font-weight:500;
+
+}
+.right{
+  display: inline-block;
+  float: left;
+}

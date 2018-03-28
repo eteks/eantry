@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Dashboard</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/dash_logo.png" alt="Login Logo"> 
+                </div>
+
+                <ul class="list-unstyled components">
+                    <!-- <p>Dummy Heading</p> -->
+                    <li class="">
+                        <a href="#first" data-toggle="collapse" aria-expanded="false"><img src="img/first.png"></a>
+                        <ul class="collapse list-unstyled" id="first">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- <a href="#">About</a> -->
+                        <a href="#second" data-toggle="collapse" aria-expanded="false"><img src="img/second.png"></a>
+                        <ul class="collapse list-unstyled" id="second">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#third" data-toggle="collapse" aria-expanded="false"><img src="img/third.png"></a>
+                        <ul class="collapse list-unstyled" id="third">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#fourth" data-toggle="collapse" aria-expanded="false"><img src="img/fourth.png"></a>
+                        <ul class="collapse list-unstyled" id="fourth">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#fifth" data-toggle="collapse" aria-expanded="false"><img src="img/fifth.png"></a>
+                        <ul class="collapse list-unstyled" id="fifth">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#sixth" data-toggle="collapse" aria-expanded="false"><img src="img/sixth.png"></a>
+                        <ul class="collapse list-unstyled" id="sixth">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#" class="powered"><img src="img/powered.png"></a>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                        </div>
+                        <div class="header-right">
+                            <p>Miercoles,</br>29 de Noviembre,</br>2017 </p>
+                        </div>                        
+                    </div>
+                </nav>
+                
+                <div class="content-holder">
+                    
+                    <div class="text-right user-space">
+                        <div class="dropdown show">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/user_icon.png">
+                          </a>
+
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <h2>Collapsible Sidebar Using Bootstrap 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                     -->
+                    <div class="rowbg">
+                        <p>Datos Acumulados:    Fecha Inicio Año Fiscal        a        Fecha Actual Año Fiscal</p>
+                        <div>
+                            <div>
+                            <p>Mes</p>
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                            <div class="right">
+                            <p>Trimestre</p>
+                                <select>
+                                  <option value="volvo">Volvo</option>
+                                  <option value="saab">Saab</option>
+                                  <option value="opel">Opel</option>
+                                  <option value="audi">Audi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="right">
+                        <p>Mes</p>
+                        <select>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                        <p>Trimestre</p>
+                        <select>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                        </div>
+
+                    </div>
+
+                     
+                </div>     
+                <!-- content holder -->
+                <footer>        
+                    <p>Aviso legal / Política de privacidad / Mapa de sitio</p>
+                </footer>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () 
+                {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    if ($('#content').hasClass('active')) 
+                    {
+                            $(".navbar").css("width", "100%");
+                            $("footer").css("width", "100%");
+                    }
+                    else
+                    {
+                        $(".navbar").css("width", "calc(100% - 185px)");
+                        $("footer").css("width", "calc(100% - 185px)");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

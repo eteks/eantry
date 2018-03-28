@@ -1,0 +1,79 @@
+@font-face 
+{
+    font-family: montserrat_semibold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face 
+{
+    font-family: montserrat_regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+body{
+  background:#efefee;
+}
+body,p,h2
+{
+  color: #000;
+}
+body
+{
+    height:100%;
+}
+/*loginform*/
+.login_area
+{
+  padding:5%;
+  background:#efefee;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.login_area a
+{
+  color: #0d557d;
+  font-family: montserrat_semibold;
+}
+.login_area a:hover
+{
+  color: #f0d451;
+}
+.login_content
+{
+  font-family: montserrat_regular; 
+  background:#fff;
+  height:100%;
+}
+.login_content h2
+{  
+  font-size: 19px;
+  margin: 10px 0;
+}
+.login_content p
+{
+  font-size: 13px
+}
+.login_content > div
+{
+  max-width: 385px;
+  margin: 0 auto;
+  padding: 100px 10px;
+ /* transform: translateY(-50%);
+  position:relative;
+  top:50%;*/
+}
+.login_button
+{
+  width:100%;
+  font-family: montserrat_semibold; 
+  background-color: #0d557d;
+  height:30px;
+  font-size: 13px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 10px;
+
+}
+.login_content .custom-checkbox
+{
+  margin:10px 0;
+}

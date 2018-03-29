@@ -12,4 +12,7 @@ class Registration_pageview(TemplateView):
 class Forgot_password_pageview(TemplateView): #view for sample template starts here
     template_name = "forgot_password.html"   
 
-# Create your views here.
+class Index_pageview(TemplateView):
+	template_name = "index.html"
+	
+		

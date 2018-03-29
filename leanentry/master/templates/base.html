@@ -11,31 +11,55 @@
      LeanEntry - {% block title %}{% endblock %}
     </title>
     <!-- jQuery CDN -->
-    <script src="{% static 'https://code.jquery.com/jquery-1.12.0.min.js' %}"></script> <!-- This is how to include a static file -->
-    <!-- Bootstrap Js CDN -->
-
-     <script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' %}"></script>
-     <!-- jQuery Custom Scroller CDN -->
-    <script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    
 
      <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
       <!-- Our Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" />
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" type="text/css" />
 
   </head>
-
-  <body>
+ <body>
      
   {% block pagecontent %}
   {% endblock %}
      
-  </body>
+          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> <!-- This is how to include a static file -->
+
+          <!-- Bootstrap Js CDN -->
+
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          <!-- jQuery Custom Scroller CDN -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () 
+                {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    if ($('#content').hasClass('active')) 
+                    {
+                            $(".navbar").css("width", "100%");
+                            $("footer").css("width", "100%");
+                    }
+                    else
+                    {
+                        $(".navbar").css("width", "calc(100% - 185px)");
+                        $("footer").css("width", "calc(100% - 185px)");
+                    }
+                });
+
+            });
+        </script>
+    </body>
 </html>

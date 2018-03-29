@@ -137,6 +137,19 @@ a, a:hover, a:focus {
     font-family: montserrat_regular;
     
 }
+#sidebar ul li a span
+{
+  display: none;
+  padding: 9px;
+}
+#sidebar ul li a:hover span
+{
+  display: block;
+}
+#sidebar ul li a:hover img
+{
+  display: none;
+}
 #sidebar ul ul a 
 {
   border-bottom:1px solid #fff;
@@ -184,7 +197,7 @@ a[aria-expanded="true"]::before
     bottom: 0;
     left: 0;
     background: #0d557d;
-    padding: 10px 0;
+    padding: 6px 0;
     width: 185px;
 }
 /* ---------------------------------------------------
@@ -355,7 +368,7 @@ padding: 10px 10px 5px 0;
 .slot h4
 {
   color:#babcbc;
-  padding:13px;
+  padding:15px;
   margin: 0;
   font-size: 16px;
   font-family: montserrat_regular;
@@ -373,6 +386,7 @@ padding: 10px 10px 5px 0;
   font-family: montserrat_regular;
   font-size: 16px;
   display:block;
+  padding: 5px;
 }
 .slot p
 {
@@ -394,7 +408,6 @@ padding: 10px 10px 5px 0;
 .slot .badge-red{
   background: #e2001a;
 }
-
 /* ---------------------------------------------------
     footr STYLE
 ----------------------------------------------------- */
@@ -407,15 +420,25 @@ footer
   border-left:1px solid #fff; 
   background: #0d557d;
   transition: width 0.3s;
+  min-height: 39px;
 }
 footer p
 {
   text-align: right;
   margin: 0;
 }
+footer br
+{
+  display:none;
+}
 .content-space
 {
   margin: 1%;
+}
+.clear_both
+{
+    clear:both !important;
+    float:none !important; 
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -428,14 +451,48 @@ footer p
   }
   
 }
-@media (max-width: 768px) 
-{
-   
+@media (max-width: 992px) 
+{   
     #sidebarCollapse span 
-    {
-        display: none;
-    }
+  {
+      display: none;
+  }
+  .navbar-btn
+  {
+    background: none;
+    color: #fff;
+  }
+  .navbar-btn.focus, .navbar-btn:focus, .navbar-btn:hover
+  {
+    color:#fff;
+    opacity:0.7;
+  }
+  .navbar,footer
+  {
+    border:0;
+  }
 }
-
+@media (max-width: 768px) 
+{   
+ .accum_sec 
+ {
+      float: none;
+      width: 195px;
+      margin: 0 auto;
+      text-align: center;
+  }
+  .navbar-header
+  {
+    float:left;
+  }
+  footer p
+  {
+    font-size:8px;
+  }
+  footer br
+  {
+    display:block;
+  }
+}
 /*Inner content*/
 

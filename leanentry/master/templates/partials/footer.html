@@ -5,3 +5,43 @@
                 </footer>
             </div>
         </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () 
+                {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                    if ($('#content').hasClass('active')) 
+                    {
+                            $(".navbar").css("width", "100%");
+                            $("footer").css("width", "100%");
+                    }
+                    else
+                    {
+                        $(".navbar").css("width", "calc(100% - 185px)");
+                        $("footer").css("width", "calc(100% - 185px)");
+                    }
+                });
+                
+                    if ($(window).width() < 992) 
+                    {
+                        $('#sidebar,#content').addClass('active');
+                        $(".navbar").css("width", "100%");
+                        $("footer").css("width", "100%");
+                    }
+                    else 
+                    {
+                         $('#sidebar,#content').removeClass('active');
+                         $(".navbar").css("width", "calc(100% - 185px)");
+                        $("footer").css("width", "calc(100% - 185px)");
+                    }
+                
+               
+            });
+        </script>

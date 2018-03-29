@@ -137,6 +137,19 @@ a, a:hover, a:focus {
     font-family: montserrat_regular;
     
 }
+#sidebar ul li a span
+{
+  display: none;
+  padding: 9px;
+}
+#sidebar ul li a:hover span
+{
+  display: block;
+}
+#sidebar ul li a:hover img
+{
+  display: none;
+}
 #sidebar ul ul a 
 {
   border-bottom:1px solid #fff;
@@ -395,7 +408,6 @@ padding: 10px 10px 5px 0;
 .slot .badge-red{
   background: #e2001a;
 }
-
 /* ---------------------------------------------------
     footr STYLE
 ----------------------------------------------------- */

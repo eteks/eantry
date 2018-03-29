@@ -26,10 +26,10 @@
                     <img src="img/dash_logo.png" alt="Login Logo"> 
                 </div>
 
-                <ul class="list-unstyled components">
+                <ul id="accordion" class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
                     <li class="">
-                        <a href="#first" data-toggle="collapse" aria-expanded="false"><img src="img/first.png"><span>FirstImage</span></a>
+                        <a href="#first" aria-expanded="false"><img src="img/first.png"><span>FirstImage</span></a>
                         <!-- <ul class="collapse list-unstyled" id="first">
                             <li><a href="#">Subir Documentos</a></li>
                             <li><a href="#">Nueva Factura</a></li>
@@ -39,7 +39,7 @@
                     </li>
                     <li>
                         <!-- <a href="#">About</a> -->
-                         <a href="#first" data-toggle="collapse" aria-expanded="false"><img src="img/second.png"><span>Emisión Factura</span></a>
+                         <a href="#second" aria-expanded="false"><img src="img/second.png"><span>Emisión Factura</span></a>
                         <ul class="collapse list-unstyled" id="second">
                             <li><a href="#">Subir Documentos</a></li>
                             <li><a href="#">Nueva Factura</a></li>
@@ -48,7 +48,7 @@
                         </ul>                        
                     </li>
                     <li>
-                        <a href="#second" data-toggle="collapse" aria-expanded="false"><img src="img/third.png"><span>Tickets</span></a>
+                        <a href="#third" aria-expanded="false"><img src="img/third.png"><span>Tickets</span></a>
                         <ul class="collapse list-unstyled" id="third">
                             <li><a href="#">Subir Ticket</a></li>
                             <li><a href="#">Nuevo Ticket</a></li>
@@ -58,7 +58,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#fourth" data-toggle="collapse" aria-expanded="false"><img src="img/fourth.png"><span>FourthImage</span></a>
+                        <a href="#fourth" aria-expanded="false"><img src="img/fourth.png"><span>FourthImage</span></a>
                         <ul class="collapse list-unstyled" id="fourth">
                             <!-- <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -66,7 +66,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#fifth" data-toggle="collapse" aria-expanded="false"><img src="img/fifth.png"><span>FifthImage</span></a>
+                        <a href="#fifth" aria-expanded="false"><img src="img/fifth.png"><span>FifthImage</span></a>
                         <ul class="collapse list-unstyled" id="fifth">
                             <!-- <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
@@ -74,7 +74,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#sixth" data-toggle="collapse" aria-expanded="false"><img src="img/sixth.png"><span>Balances</span></a>
+                        <a href="#sixth" aria-expanded="false"><img src="img/sixth.png"><span>Balances</span></a>
                         <ul class="collapse list-unstyled" id="sixth">
                             <li><a href="#">Cuenta PyG</a></li>
                             <li><a href="#">Balance y Situación</a></li>
@@ -117,7 +117,7 @@
                             <a class="dropdown-item" href="#">Configuración Administrador</a>
                             <a class="dropdown-item" href="#">Perfil Usuario</a>
                             <a class="dropdown-item" href="#"> Configuración Contable</a>
-                            <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                            <a class="dropdown-item" href="login.html">Cerrar Sesión</a>
                           </div>
                         </div>
                         
@@ -236,6 +236,7 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
+                
                 $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
                 });
@@ -256,6 +257,8 @@
                         $("footer").css("width", "calc(100% - 185px)");
                     }
                 });
+
+
                 
                     if ($(window).width() < 992) 
                     {
@@ -269,8 +272,21 @@
                          $(".navbar").css("width", "calc(100% - 185px)");
                         $("footer").css("width", "calc(100% - 185px)");
                     }
-                
-               
+               // Get all the links.
+                var link = $("#accordion a");
+
+                // On clicking of the links do something.
+                link.on('click', function(e) {
+                    e.preventDefault();
+
+                    var a = $(this).attr("href");
+
+                    $(a).slideDown('fast');
+
+                    //$(a).slideToggle('fast');
+                    $("#accordion ul").not(a).slideUp('fast');
+                    
+                });
             });
         </script>
     </body>

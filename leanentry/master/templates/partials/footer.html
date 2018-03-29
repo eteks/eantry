@@ -6,8 +6,9 @@
             </div>
         </div>
 
-        <script type="text/javascript">
+         <script type="text/javascript">
             $(document).ready(function () {
+                
                 $("#sidebar").mCustomScrollbar({
                     theme: "minimal"
                 });
@@ -28,6 +29,8 @@
                         $("footer").css("width", "calc(100% - 185px)");
                     }
                 });
+
+
                 
                     if ($(window).width() < 992) 
                     {
@@ -41,7 +44,20 @@
                          $(".navbar").css("width", "calc(100% - 185px)");
                         $("footer").css("width", "calc(100% - 185px)");
                     }
-                
-               
+               // Get all the links.
+                var link = $("#accordion a");
+
+                // On clicking of the links do something.
+                link.on('click', function(e) {
+                    e.preventDefault();
+
+                    var a = $(this).attr("href");
+
+                    $(a).slideDown('fast');
+
+                    //$(a).slideToggle('fast');
+                    $("#accordion ul").not(a).slideUp('fast');
+                    
+                });
             });
         </script>

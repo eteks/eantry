@@ -16,9 +16,9 @@
                         <div class="form-group">
                           <input type="password"  class="form-control" id="formGroupExampleInput2" placeholder="Password">
                         </div>
-                        <p>¿Has olvidado tu contraseña?</p>
+                        <p> <a href="{% url 'forgot_password' %}"> ¿Has olvidado tu contraseña?</a></p>
                         <button type="submit" class="login_button">ENTRA</button>
-                        <p>¿No estás registrado? {% include 'partials/link.html' %}</p>
+                        <p>¿No estás registrado? <a href="{% url 'registration' %}"> Regístrate</a></p>
                       </form>
                 </div>
             </div>   

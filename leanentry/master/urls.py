@@ -8,6 +8,6 @@ urlpatterns = [
     url(r'^registration/$', views.Registration_pageview.as_view(), name='registration'),
     url(r'^forgot_password/$', views.Forgot_password_pageview.as_view(), name='forgot_password'),
     url(r'^index/$', csrf_exempt(views.Index_pageview.as_view()), name='index'),
-
    
+    url(r'^exportor_datos/$', csrf_exempt(views.Exportor_datos_pageview.as_view()), name='exportor_datos'),
 ]

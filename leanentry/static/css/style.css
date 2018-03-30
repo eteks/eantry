@@ -439,6 +439,73 @@ footer br
 {
     clear:both !important;
     float:none !important; 
+}/* ---------------------------------------------------
+    Exportor_datos
+----------------------------------------------------- */
+.table
+{  
+  border: 1px solid #B2B3B5;
+} 
+.table th
+{ border-right: 1px solid #FFFFFF; 
+  background-color: #B2B3B5;
+  color: #FFFFFF;  
+}
+.table td
+{ border-right: 1px solid #B2B3B5; 
+  color:#B2B3B5; 
+}
+.table th:lastchild 
+{ 
+  border:0; 
+}
+.expo_dat\
+{
+
+}
+.expo_dat p
+{
+  color:#0d557d;
+  font-family: montserrat_bold;
+  font-size: 18px;
+  font-weight: 300;
+  float: left;
+}
+.expo_dat label
+{
+  color:#B2B3B5;
+  font-family: montserrat_regular;
+  font-size: 14px;
+  font-weight: 300;
+  margin-left:30px;
+  margin-right: 20px;
+ 
+}
+..expo_dat div
+{
+  display: inline-block;
+  float: left;
+}
+.expo_dat input
+{
+   background: url("../images/calender.png") no-repeat 3px;
+   background-size:10%; 
+   padding-left: 30px;
+}
+
+.table-responsive
+{
+  margin-top: 30px;
+}
+.table_green
+{
+  background-color: #019036;
+   color:#FFFFFF !important;
+}
+.table_red
+{
+ background-color: #E3001B;
+ color:#FFFFFF !important;
 }
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -474,7 +541,7 @@ footer br
 }
 @media (max-width: 768px) 
 {   
- .accum_sec 
+ .accum_sec, .expo_dat
  {
       float: none;
       width: 195px;
@@ -493,6 +560,7 @@ footer br
   {
     display:block;
   }
+  
 }
 /*Inner content*/
 

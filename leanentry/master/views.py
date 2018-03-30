@@ -15,4 +15,5 @@ class Forgot_password_pageview(TemplateView): #view for sample template starts h
 class Index_pageview(TemplateView):
 	template_name = "index.html"
 	
-		
+class Nueva_Factura_pageview(TemplateView):
+	template_name = "nueva_factura.html"		

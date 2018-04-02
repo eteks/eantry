@@ -1,0 +1,99 @@
+{% extends 'base_internal.html' %}
+
+        {% block title %}Perfil{% endblock %}
+        {% block pagecontent %}
+ 
+        	 {% include 'partials/side-bar.html' %}   
+           
+                {% include 'partials/header.html' %}
+                	
+                     <div class="content-space">
+						<div class="menu_perfil">
+							
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#USUARIO_1">USUARIO 1</a></li>
+								<li><a data-toggle="tab" href="#USUARIO_2">USUARIO 2</a></li>
+								<li><a data-toggle="tab" href="#USUARIO_3">USUARIO 3</a></li>
+								<li><a data-toggle="tab" href="#USUARIO_4">USUARIO 4</a></li>
+								<li><a data-toggle="tab" href="#USUARIO">USUARIO</a></li>
+							</ul>
+							<div class="page_topic">
+									<p>Pirfil de usuario</p>
+							</div>
+
+							<div class="tab-content">
+								
+								<div id="USUARIO_1" class="tab-pane fade in active">
+									<h3>USUARIO 1</h3>
+								
+								</div>
+								<div id="USUARIO_2" class="tab-pane fade">
+								<h3>USUARIO 2</h3>
+								
+								</div>
+								<div id="USUARIO_3" class="tab-pane fade">
+									<h3>USUARIO 3</h3>
+										<div class="usuario_three">
+												<form id ="">
+													<div class="usuario_three_input">
+													<div class="form-group"><input type="text" class="form-control" id="" placeholder="Nombre"></div>
+													</div>
+													<div class="usuario_three_input">
+													<div class="form-group"><input type="text" class="form-control" id="" placeholder="Apellidos"></div>
+													</div>
+													<div class="usuario_three_input">
+													<div class="form-group"><input type="text" class="form-control" id="" placeholder="Email"></div>
+													</div>
+													<div class="usuario_three_input">
+													<div class="form-group"><input type="text" class="form-control" id="" placeholder="Contraseña"></div>
+													</div>
+													<button type="submit" class="conf_admin_button">GUARDAR</button>
+												</form>	
+											</div>
+											
+											<div class="perfil_checkbox">
+												<div class="checkbox_topic"><p>Autorizaciones</p></div>
+													<form>
+													<div class="block">
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Registro Facturas</label></div>
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Bancos</label></div>
+													</div>
+													<div class="block">
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Emisión Facturas</label></div>
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>AEAT</label></div>
+													</div>
+													<div class="block">
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Tickets</label></div>
+													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Balances</label></div>
+													</div>
+
+
+													</form>    
+
+											</div>	
+										  
+											</div>
+
+									
+								
+								<div id="USUARIO_4" class="tab-pane fade">
+								<h3>USUARIO 4</h3>
+								
+								</div>
+								<div id="USUARIO" class="tab-pane fade">
+								<h3>USUARIO</h3>
+								
+								</div>
+							</div>
+						</div>
+					</div> <!--  content-space -->
+
+								
+				
+
+
+
+                {% include 'partials/footer.html' %}
+
+
+          	{% endblock %}

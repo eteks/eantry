@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^index/$', csrf_exempt(views.Index_pageview.as_view()), name='index'),
     url(r'^exportor_datos/$', csrf_exempt(views.Exportor_datos_pageview.as_view()), name='exportor_datos'),
     url(r'^nueva_factura/$', csrf_exempt(views.Nueva_Factura_pageview.as_view()), name='nueva_factura'),
+    url(r'^nuevo_ticket/$', csrf_exempt(views.Nuevo_Ticket_pageview.as_view()), name='nuevo_ticket'),
 ]

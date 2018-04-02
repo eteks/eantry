@@ -18,4 +18,7 @@ class Exportor_datos_pageview(TemplateView):
 	template_name = "exportor_datos.html"
 
 class Nueva_Factura_pageview(TemplateView):
-	template_name = "nueva_factura.html"		
+	template_name = "nueva_factura.html"	
+
+class Nuevo_Ticket_pageview(TemplateView):
+	template_name = "nuevo_ticket.html"		

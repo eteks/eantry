@@ -21,6 +21,12 @@ class Exportor_datos_pageview(TemplateView):
 class Nueva_Factura_pageview(TemplateView):
 	template_name = "nueva_factura.html"
 
+class Balance_pageview(TemplateView):
+	template_name = "balance.html"		
+
+class Nuevo_Ticket_pageview(TemplateView):
+	template_name = "nuevo_ticket.html"	
+		
 class configuracion_pageview(TemplateView):
 	template_name = "configuracion.html"
 
@@ -29,9 +35,3 @@ class perfil_pageview(TemplateView):
 
 class configuracion_contable_pageview(TemplateView):
 	template_name = "configuracion_contable.html"
-
-class Balance_pageview(TemplateView):
-	template_name = "balance.html"		
-
-class Nuevo_Ticket_pageview(TemplateView):
-	template_name = "nuevo_ticket.html"		

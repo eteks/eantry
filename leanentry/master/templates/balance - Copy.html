@@ -51,7 +51,7 @@
 
 						      	</div><!-- bal_left_content  -->
 						      	<div id="first" class="bal_right_content carouseller">
-						      		
+						      		<a href="javascript:void(0)" class="carouseller__left">‹</a> 
 						      		<h4>Ultimos 4 ejercicios:</h4>
 										<div class="carouseller__wrap"> 
 										<div class="carouseller__list"> 
@@ -188,7 +188,8 @@
 									      		</div>
 								      		</div><!-- bal_slot  -->								      		
 								      	</div><!-- carouseller__list	 -->
-								      	</div><!-- carouseller__list	 -->								      	
+								      	</div><!-- carouseller__list	 -->
+								      	<a href="javascript:void(0)" class="carouseller__right">›</a>
 						      	</div><!-- bal_right_content  -->
 						      	<div class="clear_both"></div>
 						    </div>
@@ -406,7 +407,12 @@
 						    </div>						    
 						  </div><!-- tab-content -->                  
                         </div><!-- content-space -->
-                        
+                        <script type="text/javascript">
+							$(function() {
+								$('#first,#second').carouseller({
+								});
+							});
+						</script>
   {% include 'partials/footer.html' %}
 
 

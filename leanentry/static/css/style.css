@@ -159,7 +159,7 @@ a, a:hover, a:focus {
     color: #fff;
     background: #f0d451;
 }
-#sidebar a[aria-expanded="false"]::before,#sidebar a[aria-expanded="true"]::before
+a[aria-expanded="false"]::before,a[aria-expanded="true"]::before
 {
   display:none;
 }
@@ -269,12 +269,12 @@ border-bottom: 1px solid #ccc;
   background: #f0d451;
 }
 
-.user-space a[aria-expanded="false"]::before,.user-space a[aria-expanded="true"]::before
+a[aria-expanded="false"]::before,a[aria-expanded="true"]::before
 {
   display:none;
   
 }
-.user-space a[aria-expanded="true"]
+a[aria-expanded="true"]
 {
   background:none !important;
 }
@@ -693,9 +693,23 @@ footer br
   padding: 15px 10px;
   color: #fff;
 }
+.cut_left
+{
+  width:39%;
+  min-width:245px;
+}
+.cut_right
+{
+  width:49%;
+} 
+.cut_right textarea
+{
+  width:100%;
+  min-height: 140px;
+}
 .grab_con
 {
-
+  
 }
 .grab_edit
 {
@@ -719,159 +733,8 @@ footer br
   color: #d1d4d4;
 }
 /* ---------------------------------------------------
-
-   configuracion
+    balance
 ----------------------------------------------------- */
-
-.conf_topic p
-{ 
-  color:#0d557d;
-  font-family: montserrat_bold;
-  font-size: 18px;
-  font-weight: 300;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-.conf_admin input
-{
-  margin-bottom: 30px;
-  
-}
-.conf_input
-{
-  width:49%;
-  font-family: montserrat_regular; 
-  height:30px;
-  font-size: 13px;
-  border: 0;
-  float: left;
-  margin-bottom: 45px;
-
-}
-.right
-{
-    margin-right: 15px;
-}
-.conf_admin_button
-{
-  width:50%;
-  font-family: montserrat_semibold; 
-  background-color: #0d557d;
-  height:30px;
-  font-size: 13px;
-  color: #fff;
-  border: 0;
-  margin-bottom: 45px;
-  margin-top: 35px;
-}
-/* ---------------------------------------------------
-    perfil
------------------------------------------------------ */
-
-.menu_perfil .tab-content h3
-{
-  color: #F1D452;
-  font-family: montserrat_bold;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 0;
-
-}
-.page_topic p
-{ 
-  color:#0d557d;
-  font-family: montserrat_bold;
-  font-size: 18px;
-  font-weight: 300;
-  margin-top: 50px;
-}
-.usuario_three 
-{
-  width: 48%;
-  float: left;
-  margin-right: 15px;
-}
-.usuario_three_input
-{
-  width:100%;
-  font-family: montserrat_regular; 
-  height:30px;
-  font-size: 13px;
-  border: 0;
-  margin-bottom: 45px;
-  margin-top: 35px;
-
-}
-
-/*.perfil_checkbox label
-{
-  color:#B2B3B5; 
-  font-family: montserrat_regular;
-  font-size: 14px;
-  font-weight:300;
-  margin-left:20px;
-}
-
-.perfil_checkbox .inner
-{
-  display: inline;
-  margin-left: 50px;
-  margin-top: 10px;
-}
-.perfil_checkbox .block
-{
-    margin-bottom: 30px;
-}
-.perfil_checkbox
-{
-  background-color: #EFEFEF;
-  width: 75%;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.perfil_checkbox input.largerCheckbox
-{
-  width: 30px;
-  height: 30px;
-  -webkit-width: 30px;
-  -webkit-height: 30px;
-  -moz-width: 30px;
-  -moz-height: 30px;
-
-}*/
-/* ---------------------------------------------------
-    configuracion_contable 
------------------------------------------------------ */
-.conf_cont_input
-{
-  width: 49%;
-  float: left;
-  margin-right: 15px;
-
-}
-.conf_cont_input_inner
-{
-  width:100%;
-  font-family: montserrat_regular; 
-  height:30px;
-  font-size: 13px;
-  border: 0;
-  margin-bottom: 45px;
-  margin-top: 35px;
-}
-.conf_cont_button
-{
-  width:100%;
-  font-family: montserrat_semibold; 
-  background-color: #0d557d;
-  height:30px;
-  font-size: 13px;
-  color: #fff;
-  border: 0;
-  margin-bottom: 45px;
-  margin-top: 35px;
-}
 .balance
 {
 
@@ -1013,7 +876,7 @@ footer br
 }
 .bal_slot  .focus
 {
-  color:#f0d451;
+  color:#0d557d;
 }
 .bal_two
 {
@@ -1033,6 +896,232 @@ footer br
   width: 40%;
 }
 /* ---------------------------------------------------
+   configuracion
+----------------------------------------------------- */
+
+.conf_topic p
+{ 
+  color:#0d557d;
+  font-family: montserrat_bold;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.conf_admin input
+{
+  margin-bottom: 30px;
+  
+}
+.conf_input
+{
+  width:49%;
+  font-family: montserrat_regular; 
+  height:30px;
+  font-size: 13px;
+  border: 0;
+  float: left;
+  margin-bottom: 45px;
+
+}
+.right
+{
+    margin-right: 15px;
+}
+.conf_admin_button
+{
+  width:50%;
+  font-family: montserrat_semibold; 
+  background-color: #0d557d;
+  height:30px;
+  font-size: 13px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 45px;
+  margin-top: 35px;
+}
+/* ---------------------------------------------------
+    perfil
+----------------------------------------------------- */
+
+.menu_perfil .tab-content h3
+{
+  color: #F1D452;
+  font-family: montserrat_bold;
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+
+}
+.page_topic p
+{ 
+  color:#0d557d;
+  font-family: montserrat_bold;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.prefil_button
+{
+  width:100%;
+  font-family: montserrat_semibold; 
+  background-color: #0d557d;
+  height:30px;
+  font-size: 13px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 45px;
+  margin-top: 35px;
+}
+.usuario_three 
+{
+  width: 48%;
+  float: left;
+  margin-right: 15px;
+}
+.usuario_three_input
+{
+  width:100%;
+  font-family: montserrat_regular; 
+  height:30px;
+  font-size: 13px;
+  border: 0;
+  margin-bottom: 45px;
+  margin-top: 35px;
+
+}
+/*checkbox*/
+.container 
+{
+    
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color:#b0b0b0;
+}
+
+/* Hide the browser's default checkbox */
+.container input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:1px solid #0d557d;
+    height: 35px;
+    width: 33px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    /*background-color: #2196F3;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after 
+{
+    left: 10px;
+
+    top: 3px;
+
+    width: 10px;
+
+    height: 18px;
+    border: solid #0d557d;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.perfil_checkbox
+{
+  float:left;
+  width:48%;
+  margin-left:2%;
+}
+.perfil_checkbox form
+{
+  background:#efefef;
+  padding:4%;
+}
+.perfil_checkbox label
+{
+  display: inline-block;
+  width: 250px;
+  margin: 17px 0;
+  font-family: montserrat_regular;
+  padding:7px 40px;
+  font-weight: 300;
+}
+.container < input:checked ~ .checkmark 
+{
+    /*background-color: #2196F3;*/
+    color:#000;
+}
+/* ---------------------------------------------------
+    configuracion_contable 
+----------------------------------------------------- */
+.conf_cont_input
+{
+  width: 49%;
+  float: left;
+  margin-right: 15px;
+
+}
+.conf_cont_input_inner
+{
+  width:100%;
+  font-family: montserrat_regular; 
+  height:30px;
+  font-size: 13px;
+  border: 0;
+  margin-bottom: 45px;
+  margin-top: 35px;
+}
+.conf_cont_button
+{
+  width:100%;
+  font-family: montserrat_semibold; 
+  background-color: #0d557d;
+  height:30px;
+  font-size: 13px;
+  color: #fff;
+  border: 0;
+  margin-bottom: 45px;
+  margin-top: 35px;
+}
+/* ---------------------------------------------------
     checkbox
 ----------------------------------------------------- */
 .checkbox_topic p
@@ -1044,8 +1133,11 @@ footer br
 }
 .contable_checkbox
 {
-  width: 49%;
-  float: right;
+  width: 46%;
+}
+.contable_checkbox label
+{
+  width:185px;
 }
 .menu_perfil ul li, .contable_checkbox ul li
 {
@@ -1057,11 +1149,12 @@ footer br
   /*padding: 5px 15px;*/
   border:0;
 }
-..menu_perfil ul li, .contable_checkbox ul li:hover;
+.menu_perfil ul > li.active > a,.perfil_checkbox ul > li.active > a,.balance ul > li.active > a
 {
-  background-color: #0d557d;
-  color:#fff;
-  }
+  background-color: #0d557d !important ;
+  color: #fff !important;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -1072,6 +1165,13 @@ footer br
     display:none;
   }
   
+}
+@media (max-width: 1256px) 
+{
+  .cut_right
+  {
+    width:30%;
+  }
 }
 @media (max-width: 992px) 
 {   
@@ -1101,12 +1201,15 @@ footer br
   {
     width: 65px;
   }
+  .cut_left,.cut_right
+  {
+    width:100%;
+  }
 
 }
 @media (max-width: 768px) 
 {   
- .accum_sec, .expo_dat,
-
+ .accum_sec, .expo_dat
  {
       float: none;
       width: 195px;
@@ -1142,11 +1245,6 @@ footer br
   {
     min-height: 500px;
   }
- .conf_input,.usuario_three,.conf_admin_button, .conf_cont_input, .contable_checkbox
-  {
-   width:100%;
-   margin-right:0;
-}
   .balance .tab-pane > div
   {
     width:100% !important;
@@ -1156,6 +1254,23 @@ footer br
   {
     width: 38%;
   }
+  .conf_input,.usuario_three,.conf_admin_button, .conf_cont_input, .contable_checkbox
+  {
+   width:100%;
+   margin-right:0;
+  }
+  .perfil_checkbox
+  {
+    float:none;
+    width:100%;
+    margin-left:0;
+    text-align: center;
+  }
+  .perfil_checkbox label
+  {
+    text-align: left;
+  }
+  
 }
 /*Inner content*/
 

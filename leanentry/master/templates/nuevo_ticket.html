@@ -1,0 +1,124 @@
+{% extends 'base_internal.html' %}
+
+        {% block title %}Dashboard{% endblock %}
+        {% block pagecontent %}
+ 
+         {% include 'partials/side-bar.html' %}   
+           
+                {% include 'partials/header.html' %}
+
+                        <div class="content-space nueva_factura">
+                            <div class="pdf_view">
+                                <div class="pdf_head">
+                                    <span class="pdf_nav_left">
+                                        <a href="#"><img src="../static/images/pdf_left.png" alt=""/></a>
+                                    </span>
+                                    <span class="pdf_heading">N 170072.pdf</span>
+                                    <span class="pdf_nav_right">
+                                            <a href="#"><img src="../static/images/pdf_right.png" alt=""/></a>
+                                    </span>
+                                    <span class="delete_pdf">
+                                        <a href="#"><img src="../static/images/pdf_delete.png" alt=""/></a>
+                                    </span>
+                                </div><!-- pdf_head -->
+                                <div class="pdf_content">
+                                    <embed src="../static/files/bill.pdf" type="application/pdf" />
+                                </div>                                
+                            </div><!-- pdf_view -->
+                            <div class="invoice_registration">
+                                <div class="inv_reg_head">
+                                    <span class="inv_reg_heading">Registro de tickets Recibidos</span>
+                                    <span class="inv_reg_process">
+                                        <a href="#"><img src="../static/images/first.png" alt=""/></br>Proovedores</a>
+                                    </span>
+                                    <span class="inv_reg_view">
+                                        <a href="#"><img src="../static/images/print_view.png" alt=""/></br>En proceso OCR</a>
+                                    </span>
+                                </div><!-- invoice_registration -->
+                                <div class="inv_reg_content">
+                                    <form>
+                                        <div class="cut_3">
+                                            <label>N Registro</label>
+                                            <input type="text" value="" placeholder="FE-170000001" name=""/>
+                                        </div>
+                                        <div class="cut_3">
+                                            <label>Codigo Proveedor</label>
+                                            <input type="text" value="" placeholder="450 00034" name=""/>
+                                        </div>
+                                        <div class="cut_3">
+                                            <label>NIF/DIF</label>
+                                            <input type="text" value="" placeholder="B465653748" name=""/>
+                                        </div>
+                                        <div class="cut_1">
+                                            <label>Razon Social/Nombre</label>
+                                            <input type="text" value="" placeholder="TOTALSPORT SL" name=""/>
+                                        </div>
+                                        <div class="cut_1">
+                                            <label>Forma de Pago/Plazos</label>
+                                            <input type="text" value="" placeholder="Transferencia 60 dias sia 5" name=""/>
+                                        </div>
+                                        <div class="cut_1">
+                                            <label>Cuneta Financiera</br><span>(Banco/Caja/T.Credito)</span></label>
+                                            <input type="text" value="" placeholder="572 0890 Banc Sabadell" name=""/>
+                                        </div>
+                                        <div class="cut_3">
+                                            <label>Ticket de Venta</label>
+                                            <input type="text" value="" placeholder="001-1224" name=""/>
+                                        </div>
+                                        <div class="cut_3">
+                                            <label>Fecha factura</label>
+                                            <input type="text" value="" placeholder="12/11/2017" name=""/>
+                                        </div>
+                                        <!-- <div class="cut_3">
+                                            <label>Fecha vencimiento</label>
+                                            <input type="text" value="" placeholder="1/02/2018" name=""/>
+                                        </div> -->
+                                        <div class="cut_1 max_cut">
+                                            <label>Base Imponible</label>
+                                            <input type="text" value="" placeholder="450" name=""/>
+                                        </div>
+                                        <!-- <div class="cut_2">
+                                            <label>Retecion</label>
+                                            <select name="">
+                                                <option>15%IRPF</option>
+                                            </select>
+                                            <input type="text" value="" placeholder="0,00" name=""/>
+                                        </div> -->
+                                        <div class="cut_2">
+                                            <label>Impuestos</label>
+                                            <select name="">
+                                                <option>21%IVA</option>
+                                            </select>
+                                            <input type="text" value="" placeholder="0,00" name=""/>
+                                        </div>
+                                        <!-- <div class="cut_2">
+                                            <label>Regacrgo equivalencia</label>
+                                            <select name="">
+                                                <option>5.20%</option>
+                                            </select>
+                                            <input type="text" value="" placeholder="" name=""/>
+                                        </div> -->
+                                        <div class="cut_1 max_cut">
+                                            <label>Total Factura</label>
+                                            <input type="text" value="" placeholder="544.50" name=""/>
+                                        </div>
+                                        <div class="cut_1 max_cut">
+                                            <label>Categoria</label>
+                                            <input type="text" value="" placeholder="" name=""/>
+                                        </div>
+                                        <div class="cut_1 max_cut">
+                                            <label>Observaciones</label>
+                                            <textarea type="text" value="" placeholder="" name=""></textarea>
+                                        </div>
+                                        <div class="text-right button">
+                                            <button class="grab_con">GRABAR</br>Y CONTINUAR</button>
+                                            <button class="grab_edit">GRABAR</br>Y EDITAR</button>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div><!-- content-space -->
+
+  {% include 'partials/footer.html' %}
+
+
+{% endblock %}

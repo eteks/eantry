@@ -12,4 +12,6 @@ urlpatterns = [
     url(r'^configuracion/$', csrf_exempt(views.configuracion_pageview.as_view()), name='configuracion'),
     url(r'^perfil/$', csrf_exempt(views.perfil_pageview.as_view()), name='perfil'),
     url(r'^configuracion_contable/$', csrf_exempt(views.configuracion_contable_pageview.as_view()), name='configuracion_contable'),
+    url(r'^balance/$', csrf_exempt(views.Balance_pageview.as_view()), name='balance'),
+    url(r'^nuevo_ticket/$', csrf_exempt(views.Nuevo_Ticket_pageview.as_view()), name='nuevo_ticket'),
 ]

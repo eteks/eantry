@@ -1,0 +1,85 @@
+{% extends 'base_internal.html' %}
+
+{% block title %}Configuración_Contable{% endblock %}
+{% block pagecontent %}
+
+	 {% include 'partials/side-bar.html' %}   
+   
+        {% include 'partials/header.html' %}
+        	
+        	<div class="content-space">
+        		<div class="page_topic">
+					<p> Configuración Contable</p>
+				</div>
+				<div class="conf_cont_input">
+				<form id ="">
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="Nombre"></div>
+					</div>
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="Email"></div>
+					</div>
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="Contraseña"></div>
+					</div>
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="Repetir Contraseña"></div>
+					</div>
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="código cliente APLIFISA"></div>
+					</div>
+					<div class="conf_cont_input_inner">
+					<div class="form-group"><input type="text" class="form-control" id="" placeholder="código Contable APLIFISA"></div>
+					</div>
+					<button type="submit" class="conf_cont_button">GUARDAR</button>
+				</form>	
+			   </div>
+
+				<div class="contable_checkbox">
+						<div class="checkbox_topic"><p>Declaraciones AEAT</p></div>
+							<ul class="nav nav-tabs">
+							<li class="active"><a data-toggle="tab" href="#MENUSAL">MENUSAL</a></li>
+							<li><a data-toggle="tab" href="#TRIMESTRAL">TRIMESTRAL</a></li>
+
+							</ul>
+						<div class="tab-content">
+								<div id="MENUSAL" class="tab-pane fade in active">
+								<h3>MENUSAL</h3>
+
+								</div>
+								<div id="TRIMESTRAL" class="tab-pane fade">
+								<h3>TRIMESTRAL</h3>
+								<form>
+								<div class="block">
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Registro Facturas</label></div>
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Bancos</label></div>
+								</div>
+								<div class="block">
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Emisión Facturas</label></div>
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>AEAT</label></div>
+								</div>
+								<div class="block">
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Tickets</label></div>
+								<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Balances</label></div>
+								</div>
+
+
+								</form>   
+								</div>
+
+
+						</div>
+
+
+
+
+				</div>	
+		
+
+
+        	</div> <!-- content-space -->
+
+        {% include 'partials/footer.html' %}
+
+
+  	{% endblock %}

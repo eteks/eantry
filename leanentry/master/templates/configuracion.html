@@ -1,0 +1,66 @@
+{% extends 'base_internal.html' %}
+
+        {% block title %}Configuración{% endblock %}
+        {% block pagecontent %}
+ 
+         {% include 'partials/side-bar.html' %}   
+           
+                {% include 'partials/header.html' %}
+
+                <div class="content-space">
+	                     
+                 	<div class="conf_topic">
+                        <p>Configuración de Administrador</p>
+                        <p>
+                     </div> 
+
+			    </div> <!-- content-space -->                             
+	            
+				<div class="content-space">
+
+					<div class="conf_admin">
+						<form id="">
+						
+								<div class="conf_input right">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Nombre"></div>
+								</div>
+								<div class="conf_input ">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Apellidos"></div>
+								</div>
+								<div class="conf_input right">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Empresa"></div>
+								</div>
+								<div class="conf_input ">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="NIF"></div>
+								</div>
+								<div class="conf_input right">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Email"></div>
+								</div>
+								<div class="conf_input ">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="confirmar Email"></div>
+								</div>
+								<div class="conf_input right">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Contraseña"></div>
+								</div>
+								<div class="conf_input">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="Repetir Contraseña"></div>
+								</div>
+								<div class="conf_input right">
+								<div class="form-group"><input type="text" class="form-control" id="" placeholder="código acceso"></div>
+								</div>
+								<button type="submit" class="conf_admin_button">GUARDAR</button>
+							</form>
+
+				    </div> <!-- conf_admin -->
+				</div>  <!-- content-space -->   
+				              
+
+
+                {% include 'partials/footer.html' %}
+
+
+
+
+
+
+        {% endblock %}

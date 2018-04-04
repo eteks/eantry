@@ -8,7 +8,7 @@
                 <ul id="accordion" class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
                     <li class="">
-                        <a href="#first aria-expanded="false"><img src="../static/images/first.png"><span>FirstImage</span></a>
+                        <a href="{% url 'index' %}"><img src="../static/images/first.png"><span>FirstImage</span></a>
                         <!-- <ul class="collapse list-unstyled" id="first">
                             <li><a href="#">Subir Documentos</a></li>
                             <li><a href="#">Nueva Factura</a></li>
@@ -56,7 +56,7 @@
                         <a href="#sixth" aria-expanded="false"><img src="../static/images/sixth.png"><span>Balances</span></a>
                         <ul class="collapse list-unstyled" id="sixth">
                             <li><a href="#">Cuenta PyG</a></li>
-                            <li><a href="#">Balance y Situación</a></li>
+                            <li><a href="{% url 'balance' %}">Balance y Situación</a></li>
                             <li><a href="#">Informes</a></li>
                         </ul>
                     </li>

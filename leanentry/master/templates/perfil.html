@@ -47,34 +47,40 @@
 													<div class="usuario_three_input">
 													<div class="form-group"><input type="text" class="form-control" id="" placeholder="Contraseña"></div>
 													</div>
-													<button type="submit" class="conf_admin_button">GUARDAR</button>
+													<button type="submit" class="prefil_button">GUARDAR</button>
 												</form>	
 											</div>
 											
 											<div class="perfil_checkbox">
 												<div class="checkbox_topic"><p>Autorizaciones</p></div>
 													<form>
-													<div class="block">
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Registro Facturas</label></div>
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Bancos</label></div>
-													</div>
-													<div class="block">
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Emisión Facturas</label></div>
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>AEAT</label></div>
-													</div>
-													<div class="block">
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Tickets</label></div>
-													<div class="inner"><input class="largerCheckbox" type="checkbox" name="vehicle" value="Bike"><label>Balances</label></div>
-													</div>
-
-
-													</form>    
-
-											</div>	
-										  
-											</div>
-
-									
+														<label class="container" id="check_1">Registro Facturas
+														  <input type="checkbox" checked="checked" onChange="myFunction(check_1, this)">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="container" id="check_2">Bancos
+														  <input type="checkbox" onChange="myFunction(check_2, this)">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="container clicked" id="check_3">Emisión
+														  <input type="checkbox" onChange="myFunction(check_3, this)">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="container" id="check_4">AEAT
+														  <input type="checkbox" onChange="myFunction(check_4, this)">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="container" id="check_5">Tickets
+														  <input type="checkbox" onChange="myFunction(check_5, this)">
+														  <span class="checkmark"></span>
+														</label>
+														<label class="container" id="check_6">Balances
+														  <input type="checkbox" onChange="myFunction(check_6, this)">
+														  <span class="checkmark"></span>
+														</label>
+													</form>
+												</div>
+											</div>									
 								
 								<div id="USUARIO_4" class="tab-pane fade">
 								<h3>USUARIO 4</h3>
@@ -87,12 +93,7 @@
 							</div>
 						</div>
 					</div> <!--  content-space -->
-
-								
-				
-
-
-
+					
                 {% include 'partials/footer.html' %}
 
 

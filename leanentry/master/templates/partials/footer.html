@@ -51,12 +51,13 @@
 
                     var a = $(this).attr("href");
 
-                    $(a).slideDown('fast');
+                    // $(a).slideDown('fast');
 
-                    //$(a).slideToggle('fast');
+                    $(a).slideToggle('fast');
                     $("#accordion ul").not(a).slideUp('fast');
                     
                 });
+
                 $(function() {
                     $('#first,#second').carouseller({
                     });
@@ -67,8 +68,6 @@
                 // }
 
                 // if ($('input.checkbox_check').is(':checked')) {
-
-
 
                 });
         </script>
